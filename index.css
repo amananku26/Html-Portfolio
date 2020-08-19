@@ -1,0 +1,11 @@
+.tag-line{
+    opacity: 0.5;
+}
+.gradient-in-right{
+    background-image: url(https://cdn.pixabay.com/photo/2014/02/04/20/22/abstract-258339__340.png);
+    background-color: #cccccc; /* Used if the image is unavailable */
+    height: 690px; /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+}
