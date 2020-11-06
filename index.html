@@ -1,254 +1,382 @@
-<!DOCTYPE HTML>
-<html>
-	<head>
-		<!--<title>&hearts; Music</title>-->
-		<!--<link rel='shortcut icon' type='image/x-icon' href='images/favicon.ico' />-->
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
-		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-	</head>
-	<body>
+<!DOCTYPE html>
+<html lang="en">
 
-		<!-- Sidebar -->
-			<section id="sidebar">
-				<div class="inner">
-					<nav>
-						<ul>				
-							<li><img height="155px" src="https://avatars3.githubusercontent.com/u/16429474?s=460&u=b5939cec9740ee155f7a997d2f070a9170879a96&v=4" alt="" data-position="top center"/></li>
-							<li><a href="#intro">Welcome</a></li>
-							<li><a href="#one">Skills i have</a></li>
-							<li><a href="#two">Bit about Me</a></li>
-							<li><a href="#three">Get in touch</a></li>
-						</ul>
-					</nav>
-				</div>
-			</section>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aman Anku Portfolio</title>
+    <link type="text/css" rel="stylesheet" href="style.css">
+    </link>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Assistant|Heebo&display=swap">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <script src="https://kit.fontawesome.com/74e6adde73.js" crossorigin="anonymous"></script>
+</head>
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+<body>
+<!-- Home Page Starting -->
+    <div class="banner">
+        <!-- Nav Bar  -->
+        <nav class="navbar navbar-light fixed-top " style="background-color:rgb(37, 37, 37);">
+            <div id="logo">
+                <a href="#"><img src="data:image/jpeg;base64,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" /></a>
+            </div>
+            <ul>
+                <li class="active mr-2" ><a href="#">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#commits">Portfolio</a></li>
+            </ul>
+        </nav>
 
-				<!-- Intro -->
-					<section id="intro" class="wrapper style1 fullscreen fade-up">
-						<div class="inner">
-							<h1>Aman Anku</h1>
-							<a href="https://github.com/amananku26" target="blank_">
-								<pre>< Changing the world one commit at a time /></pre>
-							</a>
-							<p>&diams; Full Stack Developer<br/>
-							&diams; Open Source Enthusiastic 
-							
-							<!--&diams; Intern at Google Summer of Code - Mozilla</br>-->
-							<!--Eventually, will Graduate in CSE from NIT TRICHY by May, 2016-->
-							</p>
-							<ul class="actions">
-								<li><a href="images\Aman Anku @Campus (1).pdf" target="blank_" class="button scrolly">More about Me - Resume</a></li>
-							</ul>
-						</div>
-					</section>
+        <div class="cont mt-5 pt-5">
+            <img src="https://avatars3.githubusercontent.com/u/16429474?s=460&u=b5939cec9740ee155f7a997d2f070a9170879a96&v=4" />
+            <h1 class="mt-3">Hi,</h1>
+            <h1>I'm <span class="text-primary">Aman Anku,</span></h1>
+            <h1 class="mb-3">Full-Stack Developer</h1>
+            <a href="#About"><button class="btn btn-outline-light mr-4 ">Scroll Down<i
+                        class="fas fa-arrow-down ml-2"></i></button></a>
+        </div>
+        <!-- Social Media References -->
+        
+        <div class="social-media">
+            <ul>
+                <a href="https://www.linkedin.com/in/amananku26/">
+                    <li><img  src="..\social_media\linkedin.png" alt="linkdin"></li>
+                </a>
+                <a href="https://twitter.com/amananku26">
+                    <li><img  src="..\social_media\twitter.png" alt="twitter"></li>
+                </a>
+                <a href="https://www.hackerrank.com/amananku26">
+                    <li><img  src="..\social_media\HackerRank.png" alt="Hackerrank" class="rounded"></li>
+                </a>
+                <a href="https://github.com/amananku26">
+                    <li><img  src="..\social_media\github.png" alt="github" class="rounded"></li>
+                </a>
+            </ul>
+        </div>
+    </div>
 
-				<!-- One -->
-					<section id="one" class="wrapper style2 spotlights">
-						<!--<section>
-							<a href="#" class="image"><img src="images/pic01.jpg" alt="" data-position="center center" /></a>
-							<div class="content">
-								<div class="inner">
-									<h2></h2>
-									<p></p>
-									<ul class="actions">
-										<li><a href="#" class="button"></a></li>
-									</ul>
-								</div>
-							</div>
-						</section>-->
-						<section>
-							<a href="#" class="image"><img src="images/untitled1.jpg" alt="" data-position="top center" /></a>
-							<div class="content">
-								<div class="inner">
-									<h2>Language / Tool / Platform</h2>
-									<!--<p></p>-->
-									<!--<ul class="actions">
-										<li><a href="https://github.com/kumarrishav" target="blank_" class="button">Checkout more @Github</a></li>
-									</ul>-->
-								</div>
-							</div>
-						</section>
-						<section>
-							<a href="#" class="image"><img src="images/untitled4.jpg" alt="" data-position="25% 25%" /></a>
-							<div class="content">
-								<div class="inner">
-									<h2>Library / Framework / Module</h2>
-									<!--<p></p>-->
-									<!--<ul class="actions">
-										<li><a href="https://github.com/kumarrishav" class="button">Checkout more @Github</a></li>
-									</ul>-->
-								</div>
-							</div>
-						</section>
-					</section>
+    <!-- About part starting  -->
+    <a name="About"></a>
+    <div class="about-area section-padding bg-muted mt-6 p-5 mb-5" id="about">
+        <div class="container ">
+            <div class="row">
+                <div class="col-md-4 col-sm-12 ">
+                    <div class="stack">
+                        <img src="https://avatars3.githubusercontent.com/u/16429474?s=460&u=b5939cec9740ee155f7a997d2f070a9170879a96&v=4" alt="about image">
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12 col-lg-7 col-md-offset-1  ml-5">
+                    <div class="about-right">
+                        <h2>Full-Stack developer</h2>
+                        <p>Hi, I am <span>Aman Anku</span>. I am a simple, creative, enthusiastic and fun-loving person. I
+                            always Aspiring to be a part of a reputed organization, working in a responsible position and
+                            performing consistently to the best of my skills and abilities in order to learn and
+                            grow along with the organization.</p>
 
-				<!-- Two -->
-					<section id="two" class="wrapper style3 fade-up">
-						<div class="inner">
-							<h2>So far;</h2>
-							<p>Two years experience of working on open source projects, solving real time problems, writing and deploying production codes along with specs, testing of application and good understanding of drafting & design of applications.</p>
-							<div class="features">
-								<section>
-									<span class="icon major fa-code"></span>
-									<h3>Internship</h3>
-									<ul><p>
-									<li>Intern at Google Summer of Code - 2014 under Mozilla Organisation on Firefox OS project.
-									</li>
-									</p></ul>
-								</section>
-								<section>
-									<span class="icon major fa-cog"></span>
-									<h3>Position of Responsibility</h3>
-									<ul><p>
-									<li>Founding member and contributor at Project OpenIoMeT -
-									<a href="http://openiomet.org" target="blank_">openiomet.org</a>​­</li>
-									<li>Developer & Open Source Contributor @ Mozilla</li>
-									<li>Web developer (Aug'13 - Aug'15) at Spider - R&D Club of NITT</li>
-									<li>An active Mozilla Representative.</li>
-									<li>Manager position at Pragyan 2015 - TechFest of NITT</li>
-									<li>Manager position at Vortex 2015 - Technical symposium of CSE, NITT</li>
-									</p></ul>
-								</section>
-								<section>
-									<span class="icon major fa-desktop"></span>
-									<h3>Major Projects</h3>
-									<ul><p>
-									<li>Project ​<a href="http://openiomet.org" target="blank_">Project OpenIoMeT</a>​­ - The linkage among doctors, patients & the web­ enabled medical devices to collect data and  monitor health condition of users and allows doctors to provide timely diagnosis.
-									<br/>May'16 - Ongoing
-									</li>
-									<li>Opinion mining of Real time events - Final year project
-									<br/>Feb'16 - April'16
-									</li>
-									<!--<li>Online service booking application - College (7th Sem) project
-									<br/>Oct'15- Nov'15</li>-->
-									<li>Undo Implementation of Delete & Read actions in messaging application of FireFox OS
-									<br/>Jan'15 - March'15</li>
-									<!--<li>Adding functionality in Finderjs Library and Finder App - Applait products
-									<br/>Aug'14 - Dec'14</li>-->
-									<li><a href="https://www.google-melange.com/gsoc/project/details/google/gsoc2014/kumar_rishav/5668600916475904" target="blank_">Improved messaging functionality and interaction in the Messaging application of FireFox OS</a>
-									<br/> May'14 - Aug'14</li>
-                                   	<!--<li>Discussion forum for Spider Club
-                                   	<br/> Oct'13 - Nov'13</li>-->
-									</p></ul>
+                        <p>I have Worked on some personal projects using HTML5, CSS3, Bootstrap, Javascript, redux, Reactjs , material UI, APIs and consistently learning new tech skills as well as soft skills. </p>
 
-									<!--<ul class="actions">
-										<li>
-											<a href="http://in.linkedin.com/pub/kumar-rishav/70/114/bab" class="button">More details on LinkedIn</a>
-										</li>
-									</ul>-->
-									<blockquote>Other Major & Minor projects are on <br/> Resume & LinkedIn</blockquote>
-								</section>
-								<section>
-									<span class="icon major fa-diamond"></span>
-									<h3>Mozilla MeetUPs </h3>
-									<ul><p>
-									<li>Attended <a href="https://wiki.mozilla.org/All_Hands/2015_Orlando" target="blank_">Mozilla Work-Week</a> - Dec '15 @ Orlando, USA</li>
-									<li>Invited for <a href="https://wiki.mozilla.org/All_Hands/2015_Whistler" target="blank_">Mozilla Work-Week</a> - June '15 @ Whistler villiage, Vancouver, Canada. Couldn't attend due to visa delay</li>
-									<li>Attended <a href="https://wiki.mozihttps://reps.mozilla.org/e/mozilla-india-task-force-meetup-2015/" target="blank_">Mozilla India Task Force Meetup</a> - May '15 @ Bangalore</li>
-									<li>Attended <a href="https://blog.mozilla.org/community/2014/05/30/mozcamp-beta-india-update-30-may/" target="blank_">MozCamp Bangalore</a> - June '14 @ Bangalore</li>
-									</p></ul>			
-								</section>
-								<section>
-									<span class="icon major fa-chain"></span>
-									<h3>My Talks</h3>
-									<ul><p>
-									<li>March'16 : Speaker <br/>[About FOSS & VCS]<br/> @ NIT PondicherrY</li>
-									<li>Jan'16 : Speaker <br/>[Version Control Sytems]<br/> @ NIT Trichy</li>
-									<li>Sep'15 : Speaker <br/>[HTML5 application dev]<br/> @ Gravitas VIT Vellore</li>
-									<li>May'15 : Speaker <br/>[TechFest - Tachyon]<br/> @ JUET Guna, Bhopal</li>
-									<li>March'15 : Speaker <br/>[TechFest - Anokha]<br/> @ Amrita University, Coimbatore</li>
-									</p></ul>
-								</section>
-								<section>
-									<span class="icon major fa-chain"></span>
-									<h3>& Talks...</h3>
-									<ul><p>
-									<li>Sep'14 : Speaker <br/>[Developer Boot Camp]<br/> @ Oriental, Indore</li>
-									<li>Sep'14 : Speaker <br/>[Firefox OS & Web APIs]<br/> @ Gravitas VIT Vellore</li>
-									<li>June'14 : Lightning talk <br/>[Open source contribution]<br/> @ MozCamp India, Bangalore</li>
-									<li>March'14 : Speaker <br/>[Firefox OS App Days]<br/> @ Indore</li>
-									</p></ul>
-								</section>
-							</div>
-						</div>
-					</section>
 
-				<!-- Three -->
-					<section id="three" class="wrapper style1 fade-up">
-						<div class="inner">
-							<h3>Address</h3>
-							<div class="split style1">
-								<section>
-									<ul><p>
-									Gandhi Path Ward no. 8  <br>
-									City : Saharsa <br> State : Bihar <br>
-									Pin : 852201	
-									<!-- <li>Julien Wajesbergh : jwajsjberg@mozilla.com</li>
-									<li>Steve chung : schuhng@mozilla.com</li>
-									<li>Aleh Zasypkin : <a href="https://de.linkedin.com/in/alehzashypkin" target="blank_">LinkedIn</a></li>
-									<li>Gabriele Svelto : <a href="https://nl.linkedin.com/pub/gabrihele-svelto/10/287/502" target="blank_">LinkedIn</a></li> -->
-									</p></ul>
-								</section>
-								<section>
-									<ul class="contact">
-										<!--<li>
-										
-										</li>-->
-										<li>
-											<h3>Email</h3>
-											<a href="mailto:amankumaranku@gmail.com">amankumaranku@gmail.com</a>
-										</li>
-										<li>
-											<h3>Phone</h3>
-											<span>(+91) 89863-69752</span>
-										</li>
-										<li>
-											<h3>Blog</h3>
-											<a href="https://ahiaman.co" target="blank_">Blog</a>
-											<a href="https://medium.com/@krishav" target="blank_">Medium</a>
-										</li>
-										<li>
-											<h3>Social</h3>
-											<ul class="icons">
-												<li><a href="https://twitter.com/amananku26" target="blank_" class="fa-twitter"><span class="label">Twitter</span></a></li>
-												<li><a href="https://www.hackerrank.com/amananku26" target="blank_" class="fa-hackerrank"><span class="label">Hackerrank</span></a></li>
-												<li><a href="https://github.com/amananku26" target="blank_" class="fa-github"><span class="label">GitHub</span></a></li>
-												<!--<li><a href="#" class="fa-instagram"><span class="label">Instagram</span></a></li>-->
-												<li><a href="https://www.linkedin.com/in/amananku26/" target="blank_" class="fa-linkedin"><span class="label">LinkedIn</span></a></li>
-											</ul>
-										</li>
-									</ul>
-								</section>
-							</div>
-						</div>
-					</section>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <ul class="about-list">
+                                    <li> <span class="title">Name</span> <span class="value">Aman Anku</span> </li><br />
+                                    <li> <span class="title">Age</span> <span class="value">23 Years</span> </li>
+                                    <li> <span class="title">Email</span> <span
+                                            class="value">amankumaranku@gmail.com</span> </li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-6">
+                                <ul class="about-list">
+                                    <li> <span class="title">Phone</span> <span class="value">+91-8986369752</span>
+                                    </li>
+                                    <li> <span class="title">Address</span> <span class="value">Saharsa,Bihar</span>
+                                    </li>
+                                    <li> <span class="title">Hobby</span> <span class="value">Coding , Cloning the Popular Websites
+                                            ,MotorCycle Riding, Visiting new places and Living in new cultures</span> </li>
+                                </ul>
+                            </div>
 
-			</div>
 
-		<!-- Footer -->
-			<footer id="footer" class="wrapper style1-alt">
-				<div class="inner">
-					<ul class="menu">
-						<li>&copy; Aman Anku. All rights reserved.</li>
-					</ul>
-				</div>
-			</footer>
+                        </div>
 
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-			<script src="assets/js/main.js"></script>
+                        
+                    
+                            <a href="Documents/Aman Anku @Campus (1).pdf" download><button class="btn btn-success col-sm-12 col-lg-4 my-2" >Download
+                                Resume <i class="fas fa-download"></i></button></a>
+                        <a href="Documents/Aman Anku @Campus (1).pdf"><button class="btn btn-success col-sm-12 col-lg-4 my-2  ">View
+                                Resume <i class=" fas fa-eye"></i></button></a>
+                        
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
 
-	</body>
+    <!-- Skill Part starting -->
+    <a name="Skills"></a>
+    <div id="skills-bd" class="skills-area section-padding pt-5 pb-5">
+        <div class="container">
+            <div class="row pt-4 pb-3">
+                
+                <h2 class=" text-light pb-5" style=" margin-left: 45%;">MY
+                    <swap class="text-primary">SKILLS</swap></h2>
+            </div>
+
+            <div class="row pb-6">
+                <div class="col-md-12">
+                    <div class="about-text-right">
+
+                        <div id="skills">
+
+                            <div class="row">
+
+                                <div class="col-md-6">
+                                    <div class="col-md-12">
+
+                                        <!-- skillbar 1-->
+                                        <div class="skillbar">
+                                            <h6 class="skillbar-title">HTML5</h6>
+                                            <div class="skillbar-bar">
+                                                <div class="skillbar-child"></div>
+                                            </div>
+                                        </div>
+                                        <!-- end skillbar -->
+
+                                    </div>
+
+
+                                    <div class="col-md-12">
+
+                                        <!-- skillbar -->
+                                        <div class="skillbar">
+                                            <h6 class="skillbar-title">CSS3</h6>
+                                            <div class="skillbar-bar">
+                                                <div class="skillbar-child"></div>
+                                            </div>
+
+                                        </div>
+                                        <!-- end skillbar -->
+
+                                    </div>
+
+                                    <div class="col-md-12">
+
+                                        <!-- skillbar -->
+                                        <div class="skillbar">
+                                            <h6 class="skillbar-title">Reactjs</h6>
+                                            <div class="skillbar-bar">
+                                                <div class="skillbar-child"></div>
+                                            </div>
+
+                                        </div>
+                                        <!-- end skillbar -->
+
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="col-md-12">
+
+                                        <!-- skillbar -->
+                                        <div class="skillbar">
+
+                                            <h6 class="skillbar-title">Javascript</h6>
+                                            <div class="skillbar-bar">
+                                                <div class="skillbar-child"></div>
+                                            </div>
+                                        </div>
+                                        <!-- end skillbar -->
+
+                                    </div>
+
+
+                                    <div class="col-md-12">
+                                        <!-- skillbar -->
+                                        <div class="skillbar">
+                                            <h6 class="skillbar-title">Bootstrap</h6>
+                                            <div class="skillbar-bar">
+                                                <div class="skillbar-child"></div>
+                                            </div>
+                                        </div>
+                                        <!-- end skillbar -->
+                                    </div>
+
+
+                                    <div class="col-md-12">
+                                        <!-- skillbar -->
+                                        <div class="skillbar">
+                                            <h6 class="skillbar-title">Photoshop</h6>
+                                            <div class="skillbar-bar">
+                                                <div class="skillbar-child"></div>
+                                            </div>
+                                        </div>
+                                        <!-- end skillbar -->
+
+                                    </div>
+                                    
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="col-md-12">
+
+                                        <!-- skillbar -->
+                                        <div class="skillbar">
+                                            <h6 class="skillbar-title">Material Ui</h6>
+                                            <div class="skillbar-bar">
+                                                <div class="skillbar-child"></div>
+                                            </div>
+                                        </div>
+                                        <!-- end skillbar -->
+
+                                    </div>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <div class="col-md-12">
+
+                                        <!-- skillbar -->
+                                        <div class="skillbar">
+                                            <h6 class="skillbar-title">Redux</h6>
+                                            <div class="skillbar-bar">
+                                                <div class="skillbar-child"></div>
+                                            </div>
+                                        </div>
+                                        <!-- end skillbar -->
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Projects part -->
+    <a name="projects"></a>
+
+    <div class="row">
+        <h2 class=" text-dark pt-5" style=" margin-left: 45%;">MY
+            <swap class="text-primary">PROJECTS</swap></h2>
+    </div>
+
+    <div class="container">
+        <div class="row py-5">
+          <div class="col-lg-4 col-md-5 col-sm-12">
+            <center><img src="Images/Screenshot 2020-10-14 115302.jpg"style="width: 90%;   " alt="User_profile"></center>
+            <div class="card-body">
+              <h5 class="card-title text-center">Shopping Cart</h5>
+              <p class="card-text text-center">Shopping Cart Using React Js
+                Concept used ContextApi, Axios, Styled-Components, React-Router-Dom. <br>
+                  User can Filter thrughout the Products <br>
+                  ex - Sort Price , filter category
+                </p>
+            </div>
+            <center><a href="https://github.com/amananku26/Basic-Shopping-Cart"><button class="btn btn-primary m-2">Source Code</button></a><a href="..\UP_Demo.html"><button class="btn btn-primary m-2">Watch Demo</button></a></center>
+          </div>
+          <div class="col-lg-4 col-md-5 col-sm-12">
+            <center><img src="Images/linkedclone.jpg"style="width: 90%;" alt="marks_recorder"></center>
+            <div class="card-body">
+              <h5 class="card-title text-center">Linkedin Clone</h5>
+              <p class="card-text text-center pb-2">This page is designed using HTML, CSS and Reactjs  , redux , reduxthunk , json mocker. <br> User can upload post Like and comment on other post also.</p>
+            </div>
+            <center><a href="https://github.com/amananku26/Linkedin-Clone"><button class="btn btn-primary m-2 ">Source Code</button></a><a href="..\MR_Demo.html"><button class="btn btn-primary m-2">Watch Demo</button></a></center>
+          </div>
+          <div class="col-lg-4 col-md-5 col-sm-12">
+            <center><img src="..\Images\Food_ordering.PNG"style="width: 90%;" alt="Food_ordering"></center>
+            <div class="card-body">
+              <h5 class="card-title text-center">FOOD ORDERING SYESTEM</h5>
+              <p class="card-text text-center pb-4">This page is designed using HTML, CSS and Javascript.Login Logout functionality is added using API. Users may select multiple dishes to there cart and Can order it. </p>
+            </div>
+            <center><a href="https://github.com/amananku26/Masai-Sprint-3"><button class="btn btn-primary m-2">Source Code</button></a><a href="..\FOS_Demo.html"><button class="btn btn-primary m-2">Watch Demo</button></a></center>
+          </div>
+        </div>
+
+      </div>
+
+    <a name="commits"></a>
+
+    <!-- Portfolio area -->
+    <div class=" bg-light p-5">
+        <h2 class=" text-dark pt-5" style=" margin-left: 45%;">MY
+            <swap class="text-primary">PORTFOLIO</swap>
+        </h2>
+    
+    
+        <div class="m-5">
+            <center><img src="Images/github_commits.jpg" /></center>
+        </div>
+    
+
+
+    <!--Statistic area starts-->
+
+    <div class="statistic-area section-padding custom-border p-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                    <div class="item">
+                        <h2 class="counter">200+</h2>
+                        <p>Hours Worked</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="item">
+                        <h2 class="counter">500+</h2>
+                        <p>Cups of Coffee</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="item">
+                        <h2 class="counter">300+</h2>
+                        <p>Hakerrank Problems</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
+                    <div class="item">
+                        <h2 class="counter">479+</h2>
+                        <p>Github Commits</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- Statistic area ends -->
+
+    <div class="footer-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+                    <p>&copy; 2020 All Right Reserved By <a href="https://github.com/amananku26" target="_blank">Aman Anku</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!--Footer Area Ends-->
+
+    
+
+    <script src="https://kit.fontawesome.com/74e6adde73.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+</body>
+
 </html>
