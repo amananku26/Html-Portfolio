@@ -1,154 +1,254 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<!--<title>&hearts; Music</title>-->
+		<!--<link rel='shortcut icon' type='image/x-icon' href='images/favicon.ico' />-->
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+	</head>
+	<body>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio | amananku26</title>
-    <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-</head>
+		<!-- Sidebar -->
+			<section id="sidebar">
+				<div class="inner">
+					<nav>
+						<ul>				
+							<li><img height="155px" src="https://avatars3.githubusercontent.com/u/16429474?s=460&u=b5939cec9740ee155f7a997d2f070a9170879a96&v=4" alt="" data-position="top center"/></li>
+							<li><a href="#intro">Welcome</a></li>
+							<li><a href="#one">Skills i have</a></li>
+							<li><a href="#two">Bit about Me</a></li>
+							<li><a href="#three">Get in touch</a></li>
+						</ul>
+					</nav>
+				</div>
+			</section>
 
-<body class="bg-light">
-    <div class="container-fluid">
-        <div class="row">
-            <!-- first left part profile section starts here -->
-            <div class="col-lg-3 col-sm-12">
-                <div class="card shadow my-2" id="profile-left">
-                    <div class="text-center">
-                        <!-- profile image -->
-                        <img class="mt-5 rounded-circle" src="resources/profileImg.jpg" alt="profile-image">
-                        <!-- <h1>Aman Anku</h1> -->
-                        <hr />
-                    </div>
-                </div>
-            </div>
-            <!-- first left part ends here -->
-            <!-- second right part starts here -->
-            <div class="col-lg-9 col-md-12 bg-light gradient-in-right" id="test">
-                <ul class="nav nav-pills nav-fill my-3" id="myTab" role="tablist">
-                    <li class="nav-item bg-light mr-1" role="presentation">
-                        <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab"
-                            aria-controls="home" aria-selected="true">Welcome</a>
-                    </li>
-                    <li class="nav-item bg-light mr-1" role="presentation">
-                        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
-                            aria-controls="profile" aria-selected="false">Skills : I Have</a>
-                    </li>
-                    <li class="nav-item bg-light mr-1" role="presentation">
-                        <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab"
-                            aria-controls="contact" aria-selected="false">Bit About me</a>
-                    </li>
-                    <li class="nav-item bg-light" role="presentation">
-                        <a class="nav-link" id="message-tab" data-toggle="tab" href="#message" role="tab"
-                            aria-controls="message" aria-selected="false">Get In Touch</a>
-                    </li>
-                </ul>
-                <!-- navs data -->
-                <div class="tab-content" id="myTabContent">
-                    <!-- campaign portions -->
-                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-                        <div class="row">
-                            <div col-12>
-                                <div class="ml-5 mt-5">
-                                    <h2>Aman Anku</h2>
-                                    <p class="tag-line mt-3">
-                                        < Changing the world one commit at a time />
-                                    </p>
-                                   <div class="mt-5">
-                                    <a href="resources/Aman Anku @Campus.pdf" class="bg-primary text-white p-3 rounded-pill">About Me - Resume</a>
-                                   </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- campaign ends here up side div -->
-                    <!-- package starts here -->
-                    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-                        <div class="row">
-                            <div class="col-12">
-                                <div class="ml-5 mt-5">
-                                    <div class="row">
-                                        <div class="col-4">
-                                            Language / Tool / Platform
-                                        </div>
-                                        <div class="col-6">
-                                            <div class="row">
-                                                <div class="col-4">
-                                                    <img class="img-fluid" style="height: 6rem;"
-                                                        src="resources/NodeJS.jpg" alt="">
-                                                </div>
-                                                <div class="col-4">
-                                                    <img class="img-fluid" style="height: 6rem;"
-                                                        src="resources/index.png" alt="">
-                                                </div>
-                                                <div class="col-4">
-                                                    <img class="img-fluid" style="height: 6rem;"
-                                                        src="resources/images.png" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12">
-                                <div class="ml-5 mt-5">
-                                    <div class="row">
-                                        <div class="col-4">
-                                            Library / Framework / Module
-                                        </div>
-                                        <div class="col-6">
-                                            <div class="row">
-                                                <div class="col-4">
-                                                    <img class="img-fluid" style="height: 6rem;"
-                                                        src="resources/bs.png" alt="">
-                                                </div>
-                                                <div class="col-4">
-                                                    <img class="img-fluid" style="height: 6rem;"
-                                                        src="resources/index.png" alt="">
-                                                </div>
-                                                <div class="col-4">
-                                                    <img class="img-fluid" style="height: 6rem;"
-                                                        src="resources/images.png" alt="">
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- package ends here here -->
-                    <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+		<!-- Wrapper -->
+			<div id="wrapper">
 
-                    </div>
-                    <!-- reviews part ends here -->
-                    <div class="tab-pane fade" id="message" role="tabpanel" aria-labelledby="contact-tab">
+				<!-- Intro -->
+					<section id="intro" class="wrapper style1 fullscreen fade-up">
+						<div class="inner">
+							<h1>Aman Anku</h1>
+							<a href="https://github.com/amananku26" target="blank_">
+								<pre>< Changing the world one commit at a time /></pre>
+							</a>
+							<p>&diams; Full Stack Developer<br/>
+							&diams; Open Source Enthusiastic 
+							
+							<!--&diams; Intern at Google Summer of Code - Mozilla</br>-->
+							<!--Eventually, will Graduate in CSE from NIT TRICHY by May, 2016-->
+							</p>
+							<ul class="actions">
+								<li><a href="images\Aman Anku @Campus (1).pdf" target="blank_" class="button scrolly">More about Me - Resume</a></li>
+							</ul>
+						</div>
+					</section>
 
+				<!-- One -->
+					<section id="one" class="wrapper style2 spotlights">
+						<!--<section>
+							<a href="#" class="image"><img src="images/pic01.jpg" alt="" data-position="center center" /></a>
+							<div class="content">
+								<div class="inner">
+									<h2></h2>
+									<p></p>
+									<ul class="actions">
+										<li><a href="#" class="button"></a></li>
+									</ul>
+								</div>
+							</div>
+						</section>-->
+						<section>
+							<a href="#" class="image"><img src="images/untitled1.jpg" alt="" data-position="top center" /></a>
+							<div class="content">
+								<div class="inner">
+									<h2>Language / Tool / Platform</h2>
+									<!--<p></p>-->
+									<!--<ul class="actions">
+										<li><a href="https://github.com/kumarrishav" target="blank_" class="button">Checkout more @Github</a></li>
+									</ul>-->
+								</div>
+							</div>
+						</section>
+						<section>
+							<a href="#" class="image"><img src="images/untitled4.jpg" alt="" data-position="25% 25%" /></a>
+							<div class="content">
+								<div class="inner">
+									<h2>Library / Framework / Module</h2>
+									<!--<p></p>-->
+									<!--<ul class="actions">
+										<li><a href="https://github.com/kumarrishav" class="button">Checkout more @Github</a></li>
+									</ul>-->
+								</div>
+							</div>
+						</section>
+					</section>
 
-                    </div>
+				<!-- Two -->
+					<section id="two" class="wrapper style3 fade-up">
+						<div class="inner">
+							<h2>So far;</h2>
+							<p>Two years experience of working on open source projects, solving real time problems, writing and deploying production codes along with specs, testing of application and good understanding of drafting & design of applications.</p>
+							<div class="features">
+								<section>
+									<span class="icon major fa-code"></span>
+									<h3>Internship</h3>
+									<ul><p>
+									<li>Intern at Google Summer of Code - 2014 under Mozilla Organisation on Firefox OS project.
+									</li>
+									</p></ul>
+								</section>
+								<section>
+									<span class="icon major fa-cog"></span>
+									<h3>Position of Responsibility</h3>
+									<ul><p>
+									<li>Founding member and contributor at Project OpenIoMeT -
+									<a href="http://openiomet.org" target="blank_">openiomet.org</a>​­</li>
+									<li>Developer & Open Source Contributor @ Mozilla</li>
+									<li>Web developer (Aug'13 - Aug'15) at Spider - R&D Club of NITT</li>
+									<li>An active Mozilla Representative.</li>
+									<li>Manager position at Pragyan 2015 - TechFest of NITT</li>
+									<li>Manager position at Vortex 2015 - Technical symposium of CSE, NITT</li>
+									</p></ul>
+								</section>
+								<section>
+									<span class="icon major fa-desktop"></span>
+									<h3>Major Projects</h3>
+									<ul><p>
+									<li>Project ​<a href="http://openiomet.org" target="blank_">Project OpenIoMeT</a>​­ - The linkage among doctors, patients & the web­ enabled medical devices to collect data and  monitor health condition of users and allows doctors to provide timely diagnosis.
+									<br/>May'16 - Ongoing
+									</li>
+									<li>Opinion mining of Real time events - Final year project
+									<br/>Feb'16 - April'16
+									</li>
+									<!--<li>Online service booking application - College (7th Sem) project
+									<br/>Oct'15- Nov'15</li>-->
+									<li>Undo Implementation of Delete & Read actions in messaging application of FireFox OS
+									<br/>Jan'15 - March'15</li>
+									<!--<li>Adding functionality in Finderjs Library and Finder App - Applait products
+									<br/>Aug'14 - Dec'14</li>-->
+									<li><a href="https://www.google-melange.com/gsoc/project/details/google/gsoc2014/kumar_rishav/5668600916475904" target="blank_">Improved messaging functionality and interaction in the Messaging application of FireFox OS</a>
+									<br/> May'14 - Aug'14</li>
+                                   	<!--<li>Discussion forum for Spider Club
+                                   	<br/> Oct'13 - Nov'13</li>-->
+									</p></ul>
 
-                </div>
-            </div>
-            <!-- message tab navs ends here -->
-        </div>
+									<!--<ul class="actions">
+										<li>
+											<a href="http://in.linkedin.com/pub/kumar-rishav/70/114/bab" class="button">More details on LinkedIn</a>
+										</li>
+									</ul>-->
+									<blockquote>Other Major & Minor projects are on <br/> Resume & LinkedIn</blockquote>
+								</section>
+								<section>
+									<span class="icon major fa-diamond"></span>
+									<h3>Mozilla MeetUPs </h3>
+									<ul><p>
+									<li>Attended <a href="https://wiki.mozilla.org/All_Hands/2015_Orlando" target="blank_">Mozilla Work-Week</a> - Dec '15 @ Orlando, USA</li>
+									<li>Invited for <a href="https://wiki.mozilla.org/All_Hands/2015_Whistler" target="blank_">Mozilla Work-Week</a> - June '15 @ Whistler villiage, Vancouver, Canada. Couldn't attend due to visa delay</li>
+									<li>Attended <a href="https://wiki.mozihttps://reps.mozilla.org/e/mozilla-india-task-force-meetup-2015/" target="blank_">Mozilla India Task Force Meetup</a> - May '15 @ Bangalore</li>
+									<li>Attended <a href="https://blog.mozilla.org/community/2014/05/30/mozcamp-beta-india-update-30-may/" target="blank_">MozCamp Bangalore</a> - June '14 @ Bangalore</li>
+									</p></ul>			
+								</section>
+								<section>
+									<span class="icon major fa-chain"></span>
+									<h3>My Talks</h3>
+									<ul><p>
+									<li>March'16 : Speaker <br/>[About FOSS & VCS]<br/> @ NIT PondicherrY</li>
+									<li>Jan'16 : Speaker <br/>[Version Control Sytems]<br/> @ NIT Trichy</li>
+									<li>Sep'15 : Speaker <br/>[HTML5 application dev]<br/> @ Gravitas VIT Vellore</li>
+									<li>May'15 : Speaker <br/>[TechFest - Tachyon]<br/> @ JUET Guna, Bhopal</li>
+									<li>March'15 : Speaker <br/>[TechFest - Anokha]<br/> @ Amrita University, Coimbatore</li>
+									</p></ul>
+								</section>
+								<section>
+									<span class="icon major fa-chain"></span>
+									<h3>& Talks...</h3>
+									<ul><p>
+									<li>Sep'14 : Speaker <br/>[Developer Boot Camp]<br/> @ Oriental, Indore</li>
+									<li>Sep'14 : Speaker <br/>[Firefox OS & Web APIs]<br/> @ Gravitas VIT Vellore</li>
+									<li>June'14 : Lightning talk <br/>[Open source contribution]<br/> @ MozCamp India, Bangalore</li>
+									<li>March'14 : Speaker <br/>[Firefox OS App Days]<br/> @ Indore</li>
+									</p></ul>
+								</section>
+							</div>
+						</div>
+					</section>
 
+				<!-- Three -->
+					<section id="three" class="wrapper style1 fade-up">
+						<div class="inner">
+							<h3>Address</h3>
+							<div class="split style1">
+								<section>
+									<ul><p>
+									Gandhi Path Ward no. 8  <br>
+									City : Saharsa <br> State : Bihar <br>
+									Pin : 852201	
+									<!-- <li>Julien Wajesbergh : jwajsjberg@mozilla.com</li>
+									<li>Steve chung : schuhng@mozilla.com</li>
+									<li>Aleh Zasypkin : <a href="https://de.linkedin.com/in/alehzashypkin" target="blank_">LinkedIn</a></li>
+									<li>Gabriele Svelto : <a href="https://nl.linkedin.com/pub/gabrihele-svelto/10/287/502" target="blank_">LinkedIn</a></li> -->
+									</p></ul>
+								</section>
+								<section>
+									<ul class="contact">
+										<!--<li>
+										
+										</li>-->
+										<li>
+											<h3>Email</h3>
+											<a href="mailto:amankumaranku@gmail.com">amankumaranku@gmail.com</a>
+										</li>
+										<li>
+											<h3>Phone</h3>
+											<span>(+91) 89863-69752</span>
+										</li>
+										<li>
+											<h3>Blog</h3>
+											<a href="https://ahiaman.co" target="blank_">Blog</a>
+											<a href="https://medium.com/@krishav" target="blank_">Medium</a>
+										</li>
+										<li>
+											<h3>Social</h3>
+											<ul class="icons">
+												<li><a href="https://twitter.com/amananku26" target="blank_" class="fa-twitter"><span class="label">Twitter</span></a></li>
+												<li><a href="https://www.hackerrank.com/amananku26" target="blank_" class="fa-hackerrank"><span class="label">Hackerrank</span></a></li>
+												<li><a href="https://github.com/amananku26" target="blank_" class="fa-github"><span class="label">GitHub</span></a></li>
+												<!--<li><a href="#" class="fa-instagram"><span class="label">Instagram</span></a></li>-->
+												<li><a href="https://www.linkedin.com/in/amananku26/" target="blank_" class="fa-linkedin"><span class="label">LinkedIn</span></a></li>
+											</ul>
+										</li>
+									</ul>
+								</section>
+							</div>
+						</div>
+					</section>
 
-    </div>
+			</div>
 
+		<!-- Footer -->
+			<footer id="footer" class="wrapper style1-alt">
+				<div class="inner">
+					<ul class="menu">
+						<li>&copy; Aman Anku. All rights reserved.</li>
+					</ul>
+				</div>
+			</footer>
 
-    <script src="https://kit.fontawesome.com/74e6adde73.js" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-        crossorigin="anonymous"></script>
-        <script src="index.js"></script>
-</body>
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
 
+	</body>
 </html>
