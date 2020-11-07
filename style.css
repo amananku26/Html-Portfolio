@@ -30,8 +30,11 @@ h1{
     width: 100px;
     height: 35px;
 }
+/* https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQBee0UuziRwfMaEj7oIeNohcayT4omNPsNxA&usqp=CAU */
+/* https://ak.picdn.net/shutterstock/videos/1023421753/thumb/1.jpg */
+/* https://codepen.io/VincentGarreau/pen/pnlso */
 .banner{
-    background-image:url(https://wallpapertag.com/wallpaper/full/6/2/0/541388-free-download-black-white-and-red-backgrounds-1920x1080-for-mobile.jpg);
+    background-image:url(https://flevix.com/wp-content/uploads/2019/12/Live-Wave-Background.svg);
     height: 100vh;
     width: 100%;
     background-size: cover;
@@ -46,6 +49,13 @@ ul{
 @media (max-width:629px) {
     .gitimage {
       display: none;
+    }
+    .banner{
+        background-image:url(https://data.whicdn.com/images/316746364/original.gif);
+        height: 100vh;
+        width: 100%;
+        background-size: cover;
+        background-position: top;
     }
   }
 
