@@ -15,12 +15,12 @@
 }
 .cont img{
     margin-top: 50px;
-    height: 150px;
-    width: 150px;
-    border-radius: 50%;
+    height: 100%;
+    width: 70%;
+    /* border-radius: 50%; */
 }
 
-h1{
+h4{
     color: white;
 }
 
@@ -34,7 +34,7 @@ h1{
 /* https://ak.picdn.net/shutterstock/videos/1023421753/thumb/1.jpg */
 /* https://codepen.io/VincentGarreau/pen/pnlso */
 .banner{
-    background-image:url(https://flevix.com/wp-content/uploads/2019/12/Live-Wave-Background.svg);
+    background-image:url(https://royalbiriyani.com/wp-content/uploads/2019/07/banner.jpg);
     height: 100vh;
     width: 100%;
     background-size: cover;
@@ -51,7 +51,7 @@ ul{
       display: none;
     }
     .banner{
-        background-image:url(https://i.pinimg.com/originals/9b/2f/cf/9b2fcfc4838dbcbe8b97e2e038789e6b.gif);
+        background-image:url(https://i1.wp.com/tanyaadhira.com/wp-content/uploads/2020/01/7-Zomato_Best-Food-Photographers-in-Delhi_Biryani-2.jpg?fit=683%2C1024&ssl=1);
         height: 100vh;
         width: 100%;
         background-size: cover;
@@ -94,23 +94,14 @@ ul li.active a{
     list-style: none;
   }
   
-  .social-media ul li{
-    display: inline-block;
-    cursor: pointer;
-    margin: 25px 15px;
-  }
-  
-  .social-media img{
-    width: 40px;
-    height: 40px;
-  }
+
 
 /*---------- 6. About area css starts---------------*/
 
 .stack {
     position: relative;
     z-index: 10;
-    margin-bottom: 20px;
+    margin-bottom: 2px;
     display: inline-block;
 }
 
@@ -120,7 +111,7 @@ ul li.active a{
     -webkit-box-sizing: content-box;
     box-sizing: content-box;
     padding: 10px;
-    width: 100%;
+    width: 65%;
     -moz-box-shadow:    1px 1px 2px rgba(0,0,0,.25);
     -webkit-box-shadow: 1px 1px 2px rgba(0,0,0,.25);
     box-shadow:         1px 1px 2px rgba(0,0,0,.25);
@@ -229,7 +220,7 @@ ul li.active a{
     width: 100%;
     height: 100%;
     z-index: -1;
-    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    /* background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab); */
 	background-size: 400% 400%;
 	animation: gradient 15s ease infinite;
 }
