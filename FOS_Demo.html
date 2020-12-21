@@ -1,45 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Marks Recorder</title>
-    <link rel="icon" href="Images/41-413808_avengers-logo-png-transparent-background-avengers-logo-png.png" type="image/gif" sizes="16x16">
-    <link type="text/css" rel="stylesheet" href="style.css">
-    </link>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Assistant|Heebo&display=swap">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-        <script src="https://kit.fontawesome.com/74e6adde73.js" crossorigin="anonymous"></script>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ResponsiveNavBar</title>
+    <link rel="stylesheet" href="nav.css">
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
     <style>
-        video{
+         video{
             margin-top: 2%;
-            height: 60%;
-            width: 60%;
+            height: 80%;
+            width: 80%;
 
         }
     </style>
 </head>
+
 <body>
 
-    <nav class="navbar navbar-light fixed-top " style="background-color: rgba(100, 100, 100, 0.8)">
-        <div id="logo">
-            <a href="index.html"><img src="..\Images\LOGO.png" /></a>
+    <header>
+        <div class='wrap'>
+            <nav>
+                <a href="index.html" class="navbar-brand">
+                   <img style="height: 60px;border-radius: 88px;" src="https://avatars3.githubusercontent.com/u/16429474?s=460&u=b5939cec9740ee155f7a997d2f070a9170879a96&v=4" alt="">
+                </a>
+                <ul class="navbar-list">
+                    <li class='navbar-item'><a class=navbar-link href='index.html'>Home</a></li>
+                    <li class='navbar-item'><a class=navbar-link href='index.html#About'>About</a></li>
+                    <li class='navbar-item'><a class=navbar-link href='index.html#Skills'>Skils</a></li>
+                    <li class='navbar-item'><a class=navbar-link href='index.html#projects'>Projects</a></li>
+                    <li class='navbar-item'><a class=navbar-link href='index.html#commits'>Portfolio</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </div>
+            </nav>
         </div>
-        <ul>
-            <li class="active mr-2" ><a href="index.html">Home</a></li>
-            <li><a href="index.html#About">About</a></li>
-            <li><a href=" index.html#Skills">Skills</a></li>
-            <li><a href=" index.html#projects">Projects</a></li>
-            <li><a href=" index.html#commits">Portfolio</a></li>
-        </ul>
-    </nav>
+    </header>
 
     <div class="row">
-        <h2 class=" text-dark" style=" margin-left: 40%; margin-top: 7%;">FOOD ORDERING
-            <swap class="text-primary">SYSTEM</swap></h2>
+        <h2 class=" text-dark" style=" text-align: center; margin-top: 7%;color: aliceblue;font-size: 25px;">Food Ordering
+            <swap class="text-primary">System</swap></h2>
     </div>
 
-    <center><video controls autoplay src="..\Videos\Food Ordering System.mp4"></video></center>
+<center><video controls autoplay src="..\Videos\Food Ordering System.mp4"></video></center>
+
+    <script src="animation.js"></script>
 </body>
+
 </html>
