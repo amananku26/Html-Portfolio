@@ -611,6 +611,8 @@ a:link{
 }
 .swing img {
     display: block;
+    background-color: white;
+    padding:5px;
 }
 .swing:after{
     content: '';
