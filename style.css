@@ -23,6 +23,16 @@
 h2{
     color: white;
 }
+#techKnown, #ProficiencyBox
+{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+}
+#techKnown>div{
+    margin: 15px;
+}
 
 #logo img{
     float: left;
@@ -590,3 +600,74 @@ a:link{
       border-color: pink;
     }
   }
+
+  /* image  */
+  body {background: #eee;}
+.swing {
+    animation: swing ease-in-out 1s infinite alternate;
+    transform-origin: center -20px;
+    float:left;
+    box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+}
+.swing img {
+    display: block;
+}
+.swing:after{
+    content: '';
+    position: absolute;  
+    width: 20px; height: 20px;  
+    border: 1px solid #999;
+    top: -10px; left: 50%;
+    z-index: 0;
+    border-bottom: none;
+    border-right: none;
+    transform: rotate(45deg);
+}
+/* nail */
+.swing:before{
+    content: '';
+    position: absolute;
+    width: 5px; height: 5px;
+    top: -14px;left: 54%;
+    z-index: 5;
+    border-radius: 50% 50%;
+    background: #000;
+}
+ 
+@keyframes swing {
+    0% { transform: rotate(3deg); }
+    100% { transform: rotate(-3deg); }
+}
+
+/*--------------------------------------------------------------
+# About
+--------------------------------------------------------------*/
+.about{
+    padding: 85px;
+}
+.about-me .content h3 {
+    font-weight: 700;
+    font-size: 26px;
+    color: #1c7d32;
+  }
+  
+  .about-me .content ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .about-me .content ul li {
+    padding-bottom: 10px;
+  }
+  
+  .about-me .content ul i {
+    font-size: 20px;
+    padding-right: 2px;
+    color: #1c7d32;
+  }
+  
+  .about-me .content p:last-child {
+    margin-bottom: 0;
+  }
+  
+  /*--------------------------------------------------------------
