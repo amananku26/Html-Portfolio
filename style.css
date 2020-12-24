@@ -625,6 +625,10 @@ a:link{
     border-right: none;
     transform: rotate(45deg);
 }
+.navbar.scrolled {
+    background-color: #f50057 !important;
+    transition: background-color 200ms linear;
+  }
 /* nail */
 .swing:before{
     content: '';
