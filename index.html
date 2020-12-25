@@ -18,17 +18,17 @@
     <!-- Home Page Starting -->
     <div class="banner">
         <!-- Nav Bar  -->
-        <nav class="navbar fixed-top navbar-expand-lg navbar-light">
+        <nav id="navbar" class="navbar fixed-top navbar-expand-lg navbar-light">
             <a class="navbar-brand h1" href="index.html">
                 <span class="navbar-img">
                     <!-- <img class="img-fluid" style="height: 2rem;"
                         src="Images/BdrkYC.png" alt="nav-bar-logo">  -->
                 </span>
             </a>
-            <button class="navbar-toggler bg-light" type="button" data-toggle="collapse"
+            <button onclick="changeHeadingBg()" class="navbar-toggler" type="button" data-toggle="collapse"
                 data-target="#navbarCollapseContent" aria-controls="#navbarCollapseContent" aria-expanded="false"
                 aria-label="Toggle Navigation">
-                <span class="navbar-toggler-icon bg-light"></span>
+                <span class="navbar-toggler-icon"></span>
             </button>
 
             <div class="collapse navbar-collapse bg-lg-light" id="navbarCollapseContent">
@@ -685,6 +685,11 @@
     $nav.toggleClass('scrolled', $(this).scrollTop() > $nav.height());
   });
 });
+
+  var chColor = document.getElementById("navbar")
+  function changeHeadingBg(){
+    chColor.style.background = "#f50057";
+    }  
     </script>    
 </body>
 
